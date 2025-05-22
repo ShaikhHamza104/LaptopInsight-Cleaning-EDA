@@ -21,15 +21,14 @@ This project is focused on cleaning and preprocessing a raw laptop dataset to pr
 ### ✅ Review of  Project Structure:
 | File/Folder             | Purpose                                                     |
 | ----------------------- | ----------------------------------------------------------- |
-| `.venv/`                | Local virtual environment (Good practice)                   |
-| `laptop_cleaning.ipynb` | Main notebook for data cleaning                             |
+| `01_laptop_cleaning_and_univariate_analysis_.ipynb` | Main notebook for data cleaning and univariate analysis notebook                            |
+| `02_bivariate_analysis_ .ipynb` | Bivariate analysis notebook                             |
 | `laptop.csv`            | Raw data file                                               |
 | `main.py`               | Placeholder for running logic (you can add CLI/script here) |
 | `README.md`             | Project description file ✅                                  |
 | `.gitignore`            | Keeps `.venv` and other files out of Git                    |
 | `pyproject.toml`        | Project dependencies and metadata ✅                         |
 | `uv.lock`               | Lockfile for consistent installs (like `Pipfile.lock`)      |
-| `dist/`, `*.egg-info`   | Created during packaging (you can ignore for now)           |
 
 ### 📌 SetUp
 ```bash
@@ -85,4 +84,3 @@ Suggestions for improvement are always welcome.
 
 ## 📝 License
 This project is released under the [MIT License](https://opensource.org/licenses/MIT).
-

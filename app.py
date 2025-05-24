@@ -2,7 +2,13 @@ import streamlit as st
 import pandas as pd
 import overview
 import univariate_analysis
-df = pd.read_csv('https://raw.githubusercontent.com/ShaikhHamza104/LaptopInsight-Cleaning-EDA/refs/heads/master/laptop_cleaning.csv')
+import bivariate_analysis
+
+@st.cache_data
+def load_data():
+    return pd.read_csv('https://raw.githubusercontent.com/ShaikhHamza104/LaptopInsight-Cleaning-EDA/refs/heads/master/laptop_cleaning.csv')
+
+df = load_data()
 
 st.title('EDA Dashboard : Univariate & Bivariate analysis')
 
@@ -17,9 +23,9 @@ if analysis_type == 'Overview':
 # --- Univariate Analysis ---
 elif analysis_type == "Univariate Analysis":
     univariate = univariate_analysis.UnivariateAnalysis(df)
-    univariate_analysis = univariate_analysis.UnivariateAnalysis(df)
-    univariate_analysis.display()
+    univariate.display()
 
 # --- Bivariate Analysis ---
 elif analysis_type == "Bivariate Analysis":
-    st.write("Bivariate Analysis is under construction. Please check back later.")
+    bivariate_analysis = bivariate_analysis.BivariateAnalysis(df)
+    bivariate_analysis.column_vs_column_display()

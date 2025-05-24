@@ -68,8 +68,10 @@ This project is licensed under the MIT License.
 
 This is a simple and modular **Data Analysis** project built using Python. It performs **univariate** and **bivariate analysis** on datasets with visualizations using Plotly, Seaborn, and more. It’s designed for easy use, whether you're analyzing data locally or planning to deploy it on the web (e.g., with **Streamlit**).
 
-🔗 I will share the website link here once it's live.
+## 🔗 Live App
 
+Check out the live Streamlit app here:  
+👉 [laptop-insight.streamlit.app](https://laptop-insight.streamlit.app/)
 
 ### 👋 Contributing
 
